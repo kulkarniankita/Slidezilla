@@ -1,0 +1,61 @@
+body {
+	
+	
+}
+
+.navbar
+{
+background:#FFCC00;
+}
+.navbar-brand {color:white;}
+
+#container
+{
+margin: 0 auto;
+width: 1000px;
+}
+
+	#filedrop
+	{
+		width: 300px;
+		height:200px;
+		color:Gray;
+		border: 10px dashed #CCCCCC;
+	}
+	
+img { cursor:pointer;}
+#dropzone
+{
+position:absolute;
+top:15%;
+left:5%;
+}
+
+#prev {
+	position:relative;
+	z-index:10;
+	top:60px;
+	left:150px;
+	/*left:-100px;*/
+}
+
+#next {
+	position:relative;
+	z-index:10;
+	top:75px;
+	left:490px;
+}
+
+#pic
+{
+background:#F8F8F8;border-style:solid;border-width:small;width: 601px;height:301px;
+margin-left:36%; margin-top: -5%;
+		border: 6 px #9a9a9a;
+}
+
+#smallpics
+{
+margin-left:36%; margin-top: 1%;
+width: 601px;height:80px;
+		border: 6px dashed #9a9a9a;
+}

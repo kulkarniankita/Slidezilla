@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dev Derby</title>
+		<script src="js/script.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+      
+</head>
+<body>
+<div class="navbar navbar-inverse">
+	  <a class="navbar-brand" href="">SlideZilla</a>
+
+	  <ul class="nav navbar-nav"></ul>
+	</div>
+<div id="container">
+	<h3><p>Dynamic Slider - Pics uploaded in the dropzone will form a Slider</p></h3>
+	<div id="dropzone">
+		<br>
+		<p><h4>Drop your pics here</h4></p>
+		<div id="filedrop"></div>
+		<br>
+		<p><h4>File Details:</h4></p>
+		<div id="filedata"></div>	
+	</div>
+
+		<div id="slideshow">
+			<div id="next"><img src="front.png" width="40px;" id="next" onclick="next()"></div>
+			<div id="prev"><img src="back.png" width="40px;" id="prev" onclick="prev()"></div>
+			
+			<div id="pic"></div>
+			<div id="smallpics"></div>
+		</div>
+</div>
+	
+</body>
+	
+</html>

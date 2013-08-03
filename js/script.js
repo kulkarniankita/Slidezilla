@@ -13,9 +13,8 @@ var i=0;
 			}
 			
 			function next()
-			{
-			
-			if(i != images.length-1)
+		{
+			if(i != images.length)
 				{ $('#pic').html('<img id="sm" src="'+images[i+1]+'" alt="" style="width:100%;height:100%;" />');
 				
 				 i = i+1;
@@ -38,14 +37,14 @@ var i=0;
 			
 			function pickme(i)
 			{			
-				if(!images[i].length)
+				/*if(!images[i].length)
 				{
 				$('#pic').html('<img src="'+images[i]+'" alt="" style="width:100%;height:100%;" />');	
-				}
-				if(images[i])
-				{
-				$('#pic').html('<img src="'+images[images.length+1]+'" alt="" style="width:100%;height:100%;" />');	
-				}
+				}*/
+				//if(images[i])
+				//{
+				$('#pic').html('<img src="'+images[i]+'" alt="" style="width:100%;height:100%;" />');	
+				//}
 			}
 			function onFilesDropped(theEvt)
 			{
@@ -61,7 +60,7 @@ var i=0;
 				{
 				$('#smallpics').append('<img id="slide'+i+'" src="'+files[i].name+'" alt="" width="75px" height="75px" onclick="pickme('+i+')"  />&nbsp;&nbsp; ');
 				images.push(files[i].name);
-				console.log(files[i].name);
+				//console.log(files[i].name);
 					
 			var fileInfo = "<p>File name: " + files[i].name + "; size: " + files[i].size + "; type: " + files[i].type + "</p>";
             totalBytes += files[i].size;			

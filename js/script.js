@@ -12,16 +12,15 @@ var i=0;
 			document.getElementById("filedrop").addEventListener("dragover", onDragOver);
 			}
 			
-			function next()
+			function nexts()
 		{
-			if(i != images.length)
+			if(i != images.length-1)
 				{ $('#pic').html('<img id="sm" src="'+images[i+1]+'" alt="" style="width:100%;height:100%;" />');
-				
-				 i = i+1;
+					i = i+1;
 				 }	 
 			}
 			
-			function prev()
+			function prevs()
 			{
 			if(i >=1)
 				{ $('#pic').html('<img src="'+images[i-1]+'" alt="" style="width:100%;height:100%;" />');
@@ -37,14 +36,7 @@ var i=0;
 			
 			function pickme(i)
 			{			
-				/*if(!images[i].length)
-				{
 				$('#pic').html('<img src="'+images[i]+'" alt="" style="width:100%;height:100%;" />');	
-				}*/
-				//if(images[i])
-				//{
-				$('#pic').html('<img src="'+images[i]+'" alt="" style="width:100%;height:100%;" />');	
-				//}
 			}
 			function onFilesDropped(theEvt)
 			{
